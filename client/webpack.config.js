@@ -9,8 +9,8 @@ module.exports = () => {
   return {
     mode: 'development',
     entry: {
-      main: './src/js/index.js',
-      install: './src/js/install.js'
+      main: './Develop/client/src/js/index.js',
+      install: './Develop/client/src/js/install.js'
     },
     output: {
       filename: '[name].bundle.js',
@@ -18,7 +18,7 @@ module.exports = () => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: './index.html',
+        template: './client/index.html',
         title: 'Progressive Web App',
       }),
       new MiniCssExtractPlugin({
@@ -40,7 +40,7 @@ module.exports = () => {
         ],
       }),
       new InjectManifest({
-        swSrc: './src-sw.js',
+        swSrc: './client/src-sw.js',
         swDest: 'service-worker.js',
       }),
       new webpack.HotModuleReplacementPlugin(),

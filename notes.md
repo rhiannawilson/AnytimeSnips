@@ -62,3 +62,48 @@ DONE
 
 -->
 
+
+
+
+<!-- removed from server package .json
+   "css": "^3.0.0",
+        "extract": "^1.0.0",
+        "html": "^1.0.0",
+        "mini": "^1.1.0",
+        "plugin": "^0.3.3",
+        -->
+
+
+<!-- server package
+
+{
+    "name": "jate",
+    "version": "1.0.0",
+    "main": "server.js",
+    "scripts": {
+        "start:dev": "concurrently \"cd client && npm run build\" \"cd server && npm run server\" ",
+        "start": "npm run build && cd server && node server.js",
+        "server": "node server.js",
+        "build": "cd client && npm run build",
+        "install": "cd server && npm i && cd ../client && npm i",
+        "client": "cd client && npm start"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "webpack": "^5.93.0",
+        "webpack-pwa-manifest": "^4.3.0",
+        "workbox-webpack-plugin": "^7.1.0",
+        "css": "^3.0.0",
+        "extract": "^1.0.0",
+        "html": "^1.0.0",
+        "mini": "^1.1.0",
+        "plugin": "^0.3.3"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    },
+    "description": ""
+} -->
